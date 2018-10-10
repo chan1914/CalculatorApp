@@ -8,7 +8,7 @@ using CalculatorLibrary.cs;
 
 namespace CalculatorApp
 {
-    class CalculatorMenu
+    public class CalculatorMenu
     {
             string[] danskText;
             string[] englishText;
@@ -74,38 +74,58 @@ namespace CalculatorApp
                             Console.WriteLine(callId[i]);
                         }
                         userinput = Console.ReadKey();
-                        if (userinput.Key == ConsoleKey.D1)
-                        {
-                            Console.Clear();
-                            Console.WriteLine(Functions.DoThat());
-                        }
-                        else if (userinput.Key == ConsoleKey.D2)
-                        {
-                            Console.Clear();
-                            Console.WriteLine(Functions.DoThis());
-                        }
-                        else if (userinput.Key == ConsoleKey.D3)
-                        {
-                            Console.Clear();
-                            Console.WriteLine("hansenis");
-                        }
-                        else if (userinput.Key == ConsoleKey.D4)
-                        {
-                            Console.Clear();
-                            Console.WriteLine("gustav");
-                        }
-                        else if (userinput.Key == ConsoleKey.D0)
-                        {
-                            Console.Clear();
-                            Console.WriteLine(start);
-                            Activate();
-                        }
-                        else
-                        {
-                            Console.Clear();
-                            Console.WriteLine("tryk 1-4 eller 0 for at afslutte");
+                    if (userinput.Key == ConsoleKey.D1)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 1");
+                    }
+                    else if (userinput.Key == ConsoleKey.D2)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 2");
+                    }
+                    else if (userinput.Key == ConsoleKey.D3)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 3");
+                    }
+                    else if (userinput.Key == ConsoleKey.D4)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 4");
+                    }
+                    else if (userinput.Key == ConsoleKey.D5)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 5");
+                    }
+                    else if (userinput.Key == ConsoleKey.D6)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 6");
+                    }
+                    else if (userinput.Key == ConsoleKey.D7)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 7");
+                    }
+                    else if (userinput.Key == ConsoleKey.D8)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("svar 8");
+                    }
+                    else if (userinput.Key == ConsoleKey.D0)
+                    {
+                        Console.Clear();
+                        Console.WriteLine(start);
+                        Activate();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("tryk 1-4 eller 0 for at afslutte");
 
-                        }
+                    }
                         break;
 
 
@@ -118,32 +138,53 @@ namespace CalculatorApp
                             Console.WriteLine(englishText[i]);
                         }
                         userinput = Console.ReadKey();
-                        if (userinput.Key == ConsoleKey.D1)
-                        {
-                            Console.Clear();
-                            Console.WriteLine(Functions.DoThat());
-                        }
-                        else if (userinput.Key == ConsoleKey.D2)
-                        {
-                            Console.Clear();
-                            Console.WriteLine(Functions.DoThis());
-                        }
-                        else if (userinput.Key == ConsoleKey.D3)
-                        {
-                            Console.Clear();
-                            Console.WriteLine("hansenis");
-                        }
-                        else if (userinput.Key == ConsoleKey.D4)
-                        {
-                            Console.Clear();
-                            Console.WriteLine("gustav");
-                        }
-                        else if (userinput.Key == ConsoleKey.D0)
-                        {
-                            Console.Clear();
-
-                        }
-                        else
+                    if (userinput.Key == ConsoleKey.D1)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 1");
+                    }
+                    else if (userinput.Key == ConsoleKey.D2)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 2");
+                    }
+                    else if (userinput.Key == ConsoleKey.D3)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 3");
+                    }
+                    else if (userinput.Key == ConsoleKey.D4)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 4");
+                    }
+                    else if (userinput.Key == ConsoleKey.D5)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 5");
+                    }
+                    else if (userinput.Key == ConsoleKey.D6)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 6");
+                    }
+                    else if (userinput.Key == ConsoleKey.D7)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 7");
+                    }
+                    else if (userinput.Key == ConsoleKey.D8)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("answer 8");
+                    }
+                    else if (userinput.Key == ConsoleKey.D0)
+                    {
+                        Console.Clear();
+                        Console.WriteLine(start);
+                        Activate();
+                    }
+                    else
                         {
                             Console.Clear();
                             Console.WriteLine("press 1-4 or 0 to exit");
