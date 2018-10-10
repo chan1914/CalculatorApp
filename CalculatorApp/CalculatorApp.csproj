@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CalculatorLibrary.cs">
+      <HintPath>..\..\SmartMenuLibrary\CalculatorLibrary.cs\bin\Debug\CalculatorLibrary.cs.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartMenuLibrary">
+      <HintPath>..\..\SmartMenuLibrary\SmartMenuLibrary\bin\Debug\SmartMenuLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
