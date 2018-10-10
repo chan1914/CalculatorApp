@@ -8,7 +8,7 @@ using CalculatorLibrary.cs;
 
 namespace CalculatorApp
 {
-    class Binding
+    public class Binding
     {
         
     }

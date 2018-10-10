@@ -8,7 +8,7 @@ using CalculatorLibrary.cs;
 
 namespace CalculatorApp
 {
-    class CalculatorMenu
+    public class CalculatorMenu
     {
             string[] danskText;
             string[] englishText;
