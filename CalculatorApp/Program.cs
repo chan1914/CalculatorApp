@@ -9,11 +9,22 @@ using SmartMenuLibrary;
 
 namespace CalculatorApp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            
+            {
+                Program myProgram = new Program();
+                myProgram.Run();
+            }
+
+            private void Run()
+            {
+                SmartMenu menu = new SmartMenu();
+                menu.LoadMenu("MenuSpec.txt");
+                menu.Activate();
+            }
         }
     }
+    
 }

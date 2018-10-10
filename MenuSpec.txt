@@ -1,0 +1,14 @@
+========= Lommeregner Dansk ===============
+	indtast menupunkt 1-4 for at vælge menuen
+	0. afslut
+	1. Beregn rektangletsareal;1
+	2. Beregn polyline længde;2
+	3. Indlæs talserie;3
+	4. tada;4
+========= Calculator English ===============
+	Press menupoint 1-4 to select menu
+	0. exit
+	1. Calculate rektangletsareal
+	2. Calculate polyline length
+	3. press numberseries
+	4. tada
