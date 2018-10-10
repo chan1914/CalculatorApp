@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CalculatorLibrary.cs;
 using SmartMenuLibrary;
+using CalculatorApp;
+using System.Linq;
 
 
 namespace CalculatorApp
