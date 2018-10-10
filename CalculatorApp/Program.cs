@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CalculatorLibrary.cs;
 using SmartMenuLibrary;
 using CalculatorApp;
-using System.Linq;
+
 
 
 namespace CalculatorApp
@@ -22,7 +22,7 @@ namespace CalculatorApp
 
             private void Run()
             {
-                SmartMenu menu = new SmartMenu();
+                CalculatorMenu menu = new CalculatorMenu();
                 menu.LoadMenu("MenuSpec.txt");
                 menu.Activate();
             }

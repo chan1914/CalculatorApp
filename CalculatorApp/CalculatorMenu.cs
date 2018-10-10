@@ -126,6 +126,8 @@ namespace CalculatorApp
                         Console.WriteLine("tryk 1-4 eller 0 for at afslutte");
 
                     }
+                        Console.WriteLine(start);
+                        Activate();
                         break;
 
 
