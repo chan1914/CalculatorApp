@@ -16,8 +16,6 @@ namespace CalculatorApp
             int j;
 
 
-
-
             string start = String.Join(Environment.NewLine, "SmartMenu",
                 "Vælg sprog",
                 "1 dansk",
@@ -49,7 +47,6 @@ namespace CalculatorApp
                 {
                     callId[i] = i + 1;
                 }
-
 
 
             }

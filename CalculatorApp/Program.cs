@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using CalculatorLibrary.cs;
 using SmartMenuLibrary;
 using CalculatorApp;
-using System.Linq;
+
+
 
 
 namespace CalculatorApp
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
