@@ -123,7 +123,7 @@ namespace CalculatorApp
                     else
                     {
                         Console.Clear();
-                        Console.WriteLine("tryk 1-4 eller 0 for at afslutte");
+                        Console.WriteLine("tryk 1-8 eller 0 for at afslutte");
 
                     }
                         Console.WriteLine(start);
@@ -189,7 +189,7 @@ namespace CalculatorApp
                     else
                         {
                             Console.Clear();
-                            Console.WriteLine("press 1-4 or 0 to exit");
+                            Console.WriteLine("press 1-8 or 0 to exit");
                         }
                         Console.WriteLine(start);
                         Activate();

@@ -11,7 +11,7 @@ using CalculatorApp;
 
 namespace CalculatorApp
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -19,13 +19,14 @@ namespace CalculatorApp
                 Program myProgram = new Program();
                 myProgram.Run();
             }
+        }
 
-            private void Run()
-            {
+        private void Run()
+                {
                 CalculatorMenu menu = new CalculatorMenu();
                 menu.LoadMenu("MenuSpec.txt");
                 menu.Activate();
-            }
+               }
         }
     }
     
