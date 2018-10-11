@@ -22,12 +22,12 @@ namespace CalculatorApp
         }
 
         private void Run()
-                {
-                CalculatorMenu menu = new CalculatorMenu();
-                menu.LoadMenu("MenuSpec.txt");
-                menu.Activate();
-               }
+        {
+            CalculatorMenu menu = new CalculatorMenu();
+            menu.LoadMenu("MenuSpec.txt");
+            menu.Activate();
         }
     }
-    
 }
+    
+
