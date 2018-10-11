@@ -1,0 +1,22 @@
+﻿========= Lommeregner Dansk ===============
+	indtast menupunkt 1-4 for at vælge menuen
+	0. afslut
+	1. plus tal;1
+	2. minus tal;2
+	3. gange tal;3
+	4. divider tal;4
+	5. find summen;5
+	6. find minimum;6
+	7. find maximum;7
+	8. find gennemsnittet;8
+========= Calculator English ===============
+	Press menupoint 1-4 to select menu
+	0. exit
+	1. add numbers
+	2. substract numbers
+	3. divide numbers
+	4. mulitiply numbers
+	5. find the sum
+	6. find the minimum
+	7. find the maximum
+	8. find the average

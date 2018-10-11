@@ -120,11 +120,13 @@ namespace CalculatorApp
                     else
                     {
                         Console.Clear();
-                        Console.WriteLine("tryk 1-8 eller 0 for at afslutte");
-
-                    }
+                        Console.WriteLine("fejl vælg en mulighed på skærmen");
+                        Console.WriteLine("");
                         Console.WriteLine(start);
                         Activate();
+
+                    }
+                        
                         break;
 
 
@@ -186,10 +188,12 @@ namespace CalculatorApp
                     else
                         {
                             Console.Clear();
-                            Console.WriteLine("press 1-8 or 0 to exit");
-                        }
-                        Console.WriteLine(start);
-                        Activate();
+                            Console.WriteLine("fail select an valid option on screen");
+                            Console.WriteLine("");
+                            Console.WriteLine(start);
+                            Activate();
+                    }
+                  
                         break;
 
                 }
