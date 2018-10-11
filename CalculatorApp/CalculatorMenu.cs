@@ -10,71 +10,76 @@ namespace CalculatorApp
 {
     public class CalculatorMenu
     {
-            string[] danskText;
-            string[] englishText;
-            int[] callId;
-            int j;
+        
+
+        string[] danskText;
+        string[] englishText;
+        int[] callId;
+        int j;
 
 
-            string start = String.Join(Environment.NewLine, "SmartMenu",
-                "Vælg sprog",
-                "1 dansk",
-                "2 engelsk");
+        string start = string.Join(Environment.NewLine, "SmartMenu",
+            "Vælg sprog",
+            "1 dansk",
+            "2 engelsk");
 
-            public void LoadMenu(string path)
+        public void LoadMenu(string path)
+        {
+            Console.WriteLine(start);
+            string[] text = System.IO.File.ReadAllLines(@"c:..\..\MenuSpec.txt");
+            danskText = text.Take(text.Length / 2).ToArray();
+            englishText = text.Skip(text.Length / 2).ToArray();
+
+
+            callId = new int[danskText.Length-3];
+            for (int i = 2; i < danskText.Length; i++)
             {
-                Console.WriteLine(start);
-                string[] text = System.IO.File.ReadAllLines(@"c:..\..\MenuSpec.txt");
-                danskText = text.Take(text.Length / 2).ToArray();
-                englishText = text.Skip(text.Length / 2).ToArray();
 
-
-                for (int i = 0; i < danskText.Length; i++) 
+                if (danskText[i].Contains(';'))
                 {
-
-                    if (danskText[i].Contains(';'))
+                    string[] spliter = danskText[i].Split(';');
+                    danskText[i] = spliter[0];
+                    if (spliter.Length > 1)
                     {
-                        j++;
-                        string[] spliter = danskText[i].Split(';');
-                        danskText[i] = spliter[0];
-
+                    callId[i-3] = int.Parse(spliter[1]);
                     }
                 }
 
-                callId = new int[j];
-
-                for (int i = 0; i < j; i++)
-                {
-                    callId[i] = i + 1;
-                }
-
-
             }
-            public void Activate()
+
+
+            //for (int i = 0; i < j; i++)
+            //{
+            //    callId[i] = i + 1;
+            //}
+
+
+        }
+        public void Activate()
+        {
+
+            ConsoleKeyInfo userinput;
+            string s = Console.ReadLine();
+
+            int n = int.Parse(s);
+
+            switch (n)
             {
-
-                ConsoleKeyInfo userinput;
-                string s = Console.ReadLine();
-
-                int n = int.Parse(s);
-
-                switch (n)
-                {
-                    case 1:
-                        Console.Clear();
-                        for (int i = 0; i < danskText.Length; i++)
-                        {
-                            Console.WriteLine(danskText[i]);
-                        }
-                        for (int i = 0; i < callId.Length; i++)
-                        {
-                            Console.WriteLine(callId[i]);
-                        }
-                        userinput = Console.ReadKey();
+                case 1:
+                    Console.Clear();
+                    for (int i = 0; i < danskText.Length; i++)
+                    {
+                        Console.WriteLine(danskText[i]);
+                    }
+                    for (int i = 0; i < callId.Length; i++)
+                    {
+                        Console.WriteLine(callId[i]);
+                    }
+                    userinput = Console.ReadKey();
                     if (userinput.Key == ConsoleKey.D1)
                     {
                         Console.Clear();
-                        Console.WriteLine("svar 1");
+
                     }
                     else if (userinput.Key == ConsoleKey.D2)
                     {
@@ -126,19 +131,18 @@ namespace CalculatorApp
                         Activate();
 
                     }
-                        
-                        break;
+                    break;
 
 
 
 
-                    case 2:
-                        Console.Clear();
-                        for (int i = 0; i < englishText.Length; i++)
-                        {
-                            Console.WriteLine(englishText[i]);
-                        }
-                        userinput = Console.ReadKey();
+                case 2:
+                    Console.Clear();
+                    for (int i = 0; i < englishText.Length; i++)
+                    {
+                        Console.WriteLine(englishText[i]);
+                    }
+                    userinput = Console.ReadKey();
                     if (userinput.Key == ConsoleKey.D1)
                     {
                         Console.Clear();
@@ -186,20 +190,17 @@ namespace CalculatorApp
                         Activate();
                     }
                     else
-                        {
-                            Console.Clear();
-                            Console.WriteLine("fail select an valid option on screen");
-                            Console.WriteLine("");
-                            Console.WriteLine(start);
-                            Activate();
+                    {
+                        Console.Clear();
+                        Console.WriteLine("fail select an valid option on screen");
+                        Console.WriteLine("");
+                        Console.WriteLine(start);
+                        Activate();
                     }
-                  
-                        break;
-
-                }
-
-
+                    break;
             }
-        
+
+        }
+
     }
 }

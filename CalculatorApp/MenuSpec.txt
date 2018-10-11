@@ -1,7 +1,7 @@
 ﻿========= Lommeregner Dansk ===============
 	indtast menupunkt 1-4 for at vælge menuen
 	0. afslut
-	1. plus tal;1
+	1. plus tal;1	
 	2. minus tal;2
 	3. gange tal;3
 	4. divider tal;4
