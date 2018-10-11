@@ -29,7 +29,7 @@ namespace CalculatorApp
                 englishText = text.Skip(text.Length / 2).ToArray();
 
 
-                for (int i = 0; i < danskText.Length; i++)
+                for (int i = 0; i < danskText.Length; i++) 
                 {
 
                     if (danskText[i].Contains(';'))
